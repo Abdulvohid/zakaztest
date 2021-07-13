@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+:root {
+  --main-color: #eaa023;
+  --dark: #0c1023;
+  --dark-light: #191f3a;
+  --white: #ffffff;
+  --white-light: #c8c8c8;
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  --cursive-font: "Dancing Script", cursive;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1rem;
+  background-color: #f3f3f3;
+}
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url(./images/sam-moqadam-fFYgW-zVD2E-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.2rem;
+  position: relative;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed; */
+}
+.navigation .logo a {
+  color: var(--main-color);
+  font-size: 2rem;
+  display: block;
+  text-decoration: none;
+  font-family: var(--cursive-font);
+  letter-spacing: 1px;
+}
+.nav-bar {
+  align-items: center;
+  padding: 0.8rem 0 0.2rem 0;
+}
+.nav-bar a {
+  align-items: center;
+  text-transform: uppercase;
+  font-family: serif;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 1.2rem;
+  padding-right: 1.2rem;
+  transition: opacity 0.5s ease;
+}
+.nav-bar a:hover {
+  opacity: 0.7;
+}
+.banner {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  color: white;
+  margin-top: 15%;
+}
+.banner-title {
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2;
+  left: 0;
+  top: 0;
+}
+button {
+  border-color: var(--main-color);
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  margin: 2rem;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.design {
+  padding: 4.5rem;
+}
+.title {
+  text-align: center;
+  padding: 1rem 0;
+}
+.title h2 {
+  font-family: var(--cursive-font);
+  font-size: 3rem;
+  color: var(--main-color);
+}
+.title p {
+  text-transform: capitalize;
+  padding: 0.6rem 0;
+  color: #191f3a;
+  font-family: var(--cursive-font);
+  font-size: 2rem;
+}
+.design-content {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.design-item {
+  cursor: pointer;
+  margin: 0;
+}
+.design-img {
+  position: relative;
+  overflow: hidden;
+}
+.design-img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.design-img img {
+  transition: all 1s ease;
+}
+.design-item:hover img {
+  transform: scale(1.2);
+}
+.design-img span:first-of-type {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 10px;
+  left: 10px;
+  background: #3c393d;
+  padding: 0.25rem 1rem;
+  color: #fff;
+}
+.design-img span:last-of-type {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+design-title {
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.design-title a {
+  color: #3c393d;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: serif;
+}
+.form {
+  margin: 10%;
+  background-color: var(--dark-light);
+  padding: 3rem;
+  text-align: center;
+}
+.form p {
+  color: var(--main-color);
+  font-size: 2.2rem;
+}
+.form input {
+  border-radius: 30px;
+}
+.form input:hover {
+  background-color: var(--dark);
+  color: white;
+}
+.form ::placeholder {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+textarea {
+  border-radius: 5px;
+  margin: 3rem;
+}
+textarea:hover {
+  background-color: var(--dark);
+  color: var(--main-color);
+}
